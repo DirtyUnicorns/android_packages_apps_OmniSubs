@@ -516,9 +516,6 @@ public class OmniActivity extends SubstratumActivity {
             case R.id.soft_reboot:
                 ElevatedCommands.softReboot();
                 return true;
-            case R.id.about_substratum:
-                startActivity(new Intent(this, TeamActivity.class));
-                return true;
             case R.id.auto_restart_systemui:
                 boolean enabled = prefs.getBoolean("enable_restart_systemui", true);
                 prefs.edit().putBoolean("enable_restart_systemui", !enabled).commit();
